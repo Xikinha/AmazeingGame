@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+}
+
+#heading {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#maze {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 312px;
+    height: 312px;
+}
+
+#btnInfo {
+    position: fixed;
+    top: 0.25rem;
+    left: 62%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#btnInfo:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.pop-up {
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 10%;
+    width: 25rem;
+    height: 12.5rem;
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    line-height: 150%;
+}
+
+.button {
+    width: 11rem;
+    height: 1.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.button, #info {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btnNext, #btnNew {
+    display: none;
+}
+
+#info {
+    display: flex;
+}
+
+#levelElement, #timeElement {
+    padding: 1rem;
+    width: 11rem;
+    text-align: center;
+}
+
+#message {
+    position: fixed;
+    display: none;
+    width: 36%;
+    height: 5rem;
+    margin-left: 32vw;
+    margin-top: 19.5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: white;
+}
+.win {
+    color: green;
+}
+.loss {
+    color: red;
+}
+
+.start {
+    background-color: white;
+}
+.wall {
+    background-color: black;
+}
+.path {
+    background-color: gray;
+}
+.player {
+    background-color: green;
+}
+.treasure {
+    background-color: yellow;
+}
+.played {
+    background-color: lightgreen;
+}

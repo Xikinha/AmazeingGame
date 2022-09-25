@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazeing game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js" type="module"></script>
+</head>
+<body>
+    <main>
+        <button id="btnInfo">i</button>
+        <div class="pop-up">
+            <h3>Welcome!</h3>
+            <p>You have to move from the white brick through the maze to the yellow brick.</p>
+            <p>You win the game after passing 3 different levels.</p>
+            <p>Click the START button to start playing.</p>
+            <p>Click the ARROW KEYS on your keyboard to move through the maze.</p>
+        </div>
+        <div id="heading">
+            <h1>Amazeing game</h1>
+        </div>
+        <button id="btnStart" class="button">START</button>
+        <button id="btnNext" class="button">NEXT LEVEL</button>
+        <button id="btnNew" class="button">NEW GAME</button>
+        <div id="info">
+            <div id="levelElement">Level: <span id="level"></span></div>
+            <div id="timeElement">Time: <span id="time"></span> sec</div>
+        </div>
+        <div id="message"></div>
+        <div id="maze"></div>
+    </main>
+</body>
+</html>
